@@ -7,7 +7,7 @@
       name="description"
       content="Kingdom Tech Group desarrolla productos digitales para iglesias, organizaciones educativas y equipos que necesitan operar con claridad."
     />
-    <title>Kingdom Tech Group | Productos digitales con proposito</title>
+    <title data-i18n="meta.title">Kingdom Tech Group | Productos digitales con proposito</title>
     <link rel="icon" href="assets/kingdom-tech-logo-original.png" />
     <link rel="stylesheet" href="styles.css" />
   </head>
@@ -20,11 +20,16 @@
         <span class="sr-only">Kingdom Tech Group</span>
       </a>
       <nav class="desktop-nav" aria-label="Navegacion principal">
-        <a href="#productos">Productos</a>
-        <a href="#enfoque">Enfoque</a>
+        <a href="#productos" data-i18n="nav.products">Productos</a>
+        <a href="#enfoque" data-i18n="nav.approach">Enfoque</a>
         <a href="#roadmap">Roadmap</a>
-        <a href="#contacto">Contacto</a>
+        <a href="#contacto" data-i18n="nav.contact">Contacto</a>
+        <a href="privacy.html" data-i18n="nav.privacy">Privacy</a>
+        <a href="terms.html" data-i18n="nav.terms">Terms</a>
       </nav>
+      <button class="language-toggle" type="button" data-language-toggle aria-label="Change language">
+        EN
+      </button>
       <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false">
         <span></span>
         <span></span>
@@ -32,10 +37,12 @@
     </header>
 
     <nav class="mobile-nav" aria-label="Navegacion movil">
-      <a href="#productos">Productos</a>
-      <a href="#enfoque">Enfoque</a>
+      <a href="#productos" data-i18n="nav.products">Productos</a>
+      <a href="#enfoque" data-i18n="nav.approach">Enfoque</a>
       <a href="#roadmap">Roadmap</a>
-      <a href="#contacto">Contacto</a>
+      <a href="#contacto" data-i18n="nav.contact">Contacto</a>
+      <a href="privacy.html" data-i18n="nav.privacy">Privacy</a>
+      <a href="terms.html" data-i18n="nav.terms">Terms</a>
     </nav>
 
     <main>
@@ -47,15 +54,15 @@
         />
         <div class="hero-overlay"></div>
         <div class="hero-content">
-          <p class="eyebrow">Software con vision, operaciones con orden</p>
+          <p class="eyebrow" data-i18n="hero.eyebrow">Software con vision, operaciones con orden</p>
           <h1>Kingdom Tech Group</h1>
-          <p class="hero-copy">
+          <p class="hero-copy" data-i18n="hero.copy">
             Creamos plataformas digitales para iglesias, academias y organizaciones que
             necesitan administrar personas, aprendizaje, finanzas y procesos con excelencia.
           </p>
           <div class="hero-actions">
-            <a class="button primary" href="#productos">Ver productos</a>
-            <a class="button secondary" href="#contacto">Hablemos</a>
+            <a class="button primary" href="#productos" data-i18n="hero.productsCta">Ver productos</a>
+            <a class="button secondary" href="#contacto" data-i18n="hero.contactCta">Hablemos</a>
           </div>
         </div>
       </section>
@@ -63,24 +70,24 @@
       <section class="metrics" aria-label="Indicadores de enfoque">
         <div>
           <strong>6</strong>
-          <span>lineas de producto</span>
+          <span data-i18n="metrics.products">lineas de producto</span>
         </div>
         <div>
           <strong>100%</strong>
-          <span>orientado a operaciones reales</span>
+          <span data-i18n="metrics.operations">orientado a operaciones reales</span>
         </div>
         <div>
           <strong>AI</strong>
-          <span>automatizacion aplicada</span>
+          <span data-i18n="metrics.ai">automatizacion aplicada</span>
         </div>
       </section>
 
       <section class="section intro" id="productos">
         <div class="section-heading">
-          <p class="eyebrow">Productos en desarrollo</p>
-          <h2>Un ecosistema para servir mejor y administrar con claridad.</h2>
+          <p class="eyebrow" data-i18n="products.eyebrow">Productos en desarrollo</p>
+          <h2 data-i18n="products.title">Un ecosistema para servir mejor y administrar con claridad.</h2>
         </div>
-        <p>
+        <p data-i18n="products.copy">
           Cada producto nace desde problemas concretos: seguimiento pastoral, entrenamiento,
           administracion financiera y flujos de trabajo que consumen tiempo. La meta es simple:
           menos friccion, mas visibilidad y decisiones mejor informadas.
@@ -91,17 +98,17 @@
         <article class="product-card featured">
           <div class="product-topline">
             <span class="product-icon">CH</span>
-            <span class="status">Activo</span>
+            <span class="status" data-i18n="status.active">Activo</span>
           </div>
           <h3>ChurchHub</h3>
-          <p>
+          <p data-i18n="product.churchhub.copy">
             CRM ministerial para personas, visitas, familias, grupos, seguimiento y reportes.
             Pensado para equipos que quieren cuidar mejor sin perder contexto.
           </p>
           <ul>
-            <li>Perfiles de miembros y visitantes</li>
-            <li>Seguimiento por estado, ministerio y notas</li>
-            <li>Vista operacional para lideres y equipos</li>
+            <li data-i18n="product.churchhub.item1">Perfiles de miembros y visitantes</li>
+            <li data-i18n="product.churchhub.item2">Seguimiento por estado, ministerio y notas</li>
+            <li data-i18n="product.churchhub.item3">Vista operacional para lideres y equipos</li>
           </ul>
         </article>
 
@@ -111,106 +118,106 @@
             <span class="status">Beta</span>
           </div>
           <h3>LMS Platform</h3>
-          <p>
+          <p data-i18n="product.lms.copy">
             Plataforma de aprendizaje para cursos, cohortes, evaluaciones y progreso de
             estudiantes en programas de formacion.
           </p>
           <ul>
-            <li>Catalogo de cursos y lecciones</li>
-            <li>Progreso por estudiante</li>
-            <li>Panel para instructores</li>
+            <li data-i18n="product.lms.item1">Catalogo de cursos y lecciones</li>
+            <li data-i18n="product.lms.item2">Progreso por estudiante</li>
+            <li data-i18n="product.lms.item3">Panel para instructores</li>
           </ul>
         </article>
 
         <article class="product-card">
           <div class="product-topline">
             <span class="product-icon coral">FI</span>
-            <span class="status">Modernizacion</span>
+            <span class="status" data-i18n="status.modernization">Modernizacion</span>
           </div>
           <h3>Finanzas Iglesia</h3>
-          <p>
+          <p data-i18n="product.finance.copy">
             Herramientas para ingresos, egresos, depositos, cuentas bancarias y trazabilidad
             contable en organizaciones de fe.
           </p>
           <ul>
-            <li>Control de transacciones</li>
-            <li>Depositos y conciliacion</li>
-            <li>Historial auditable</li>
+            <li data-i18n="product.finance.item1">Control de transacciones</li>
+            <li data-i18n="product.finance.item2">Depositos y conciliacion</li>
+            <li data-i18n="product.finance.item3">Historial auditable</li>
           </ul>
         </article>
 
         <article class="product-card">
           <div class="product-topline">
             <span class="product-icon blue">AI</span>
-            <span class="status">Exploracion</span>
+            <span class="status" data-i18n="status.exploration">Exploracion</span>
           </div>
           <h3>AI Workflows</h3>
-          <p>
+          <p data-i18n="product.ai.copy">
             Automatizaciones para reducir tareas repetitivas: resumenes, clasificacion,
             asistencia administrativa y apoyo en decisiones operacionales.
           </p>
           <ul>
-            <li>Asistentes internos</li>
-            <li>Reportes automatizados</li>
-            <li>Integraciones a medida</li>
+            <li data-i18n="product.ai.item1">Asistentes internos</li>
+            <li data-i18n="product.ai.item2">Reportes automatizados</li>
+            <li data-i18n="product.ai.item3">Integraciones a medida</li>
           </ul>
         </article>
 
         <article class="product-card">
           <div class="product-topline">
             <span class="product-icon violet">DS</span>
-            <span class="status">Piloto</span>
+            <span class="status" data-i18n="status.pilot">Piloto</span>
           </div>
           <h3>KTG-Signage</h3>
-          <p>
+          <p data-i18n="product.signage.copy">
             Plataforma de digital signage para anuncios, pantallas informativas, eventos,
             calendarios y comunicacion visual en iglesias, escuelas y organizaciones.
           </p>
           <ul>
-            <li>Programacion de contenido por pantalla</li>
-            <li>Anuncios, videos e imagenes</li>
-            <li>Control centralizado de comunicacion visual</li>
+            <li data-i18n="product.signage.item1">Programacion de contenido por pantalla</li>
+            <li data-i18n="product.signage.item2">Anuncios, videos e imagenes</li>
+            <li data-i18n="product.signage.item3">Control centralizado de comunicacion visual</li>
           </ul>
         </article>
 
         <article class="product-card">
           <div class="product-topline">
             <span class="product-icon green">VE</span>
-            <span class="status">Concepto</span>
+            <span class="status" data-i18n="status.concept">Concepto</span>
           </div>
-          <h3>Voto Electronico</h3>
-          <p>
+          <h3 data-i18n="product.voting.title">Voto Electronico</h3>
+          <p data-i18n="product.voting.copy">
             Solucion para procesos de votacion digital con registro de participantes,
             control de elegibilidad, conteo rapido y trazabilidad del proceso.
           </p>
           <ul>
-            <li>Votaciones seguras y organizadas</li>
-            <li>Resultados y reportes</li>
-            <li>Experiencia simple para participantes</li>
+            <li data-i18n="product.voting.item1">Votaciones seguras y organizadas</li>
+            <li data-i18n="product.voting.item2">Resultados y reportes</li>
+            <li data-i18n="product.voting.item3">Experiencia simple para participantes</li>
           </ul>
         </article>
       </section>
 
       <section class="section split" id="enfoque">
         <div class="section-heading">
-          <p class="eyebrow">Nuestro enfoque</p>
-          <h2>Productos sobrios, utiles y listos para crecer.</h2>
+          <p class="eyebrow" data-i18n="approach.eyebrow">Nuestro enfoque</p>
+          <h2 data-i18n="approach.title">Productos sobrios, utiles y listos para crecer.</h2>
         </div>
         <div class="principles">
           <div>
             <span>01</span>
-            <h3>Diseño operacional</h3>
-            <p>Interfaces limpias para usuarios que entran todos los dias a trabajar, no a perderse.</p>
+            <h3 data-i18n="approach.design.title">Diseño operacional</h3>
+            <p data-i18n="approach.design.copy">Interfaces limpias para usuarios que entran todos los dias a trabajar, no a perderse.</p>
           </div>
           <div>
             <span>02</span>
-            <h3>Datos accionables</h3>
-            <p>Paneles y reportes enfocados en decisiones, seguimiento y responsabilidad.</p>
+            <h3 data-i18n="approach.data.title">Datos accionables</h3>
+            <p data-i18n="approach.data.copy">Paneles y reportes enfocados en decisiones, seguimiento y responsabilidad.</p>
           </div>
           <div>
             <span>03</span>
-            <h3>Arquitectura escalable</h3>
-            <p>Bases modernas para crecer por modulos, integrar servicios y mantener control tecnico.</p>
+            <h3 data-i18n="approach.arch.title">Arquitectura escalable</h3>
+            <p data-i18n="approach.arch.copy">Bases modernas para crecer por modulos, integrar servicios y mantener control tecnico.</p>
           </div>
         </div>
       </section>
@@ -218,61 +225,61 @@
       <section class="roadmap" id="roadmap">
         <div class="section-heading">
           <p class="eyebrow">Roadmap</p>
-          <h2>De prototipo a plataforma comercial.</h2>
+          <h2 data-i18n="roadmap.title">De prototipo a plataforma comercial.</h2>
         </div>
         <div class="timeline">
           <div class="timeline-item is-current">
-            <span>Fase 1</span>
-            <h3>Validacion</h3>
-            <p>Definir casos de uso, demos y mensajes comerciales por producto.</p>
+            <span data-i18n="roadmap.phase1">Fase 1</span>
+            <h3 data-i18n="roadmap.validation.title">Validacion</h3>
+            <p data-i18n="roadmap.validation.copy">Definir casos de uso, demos y mensajes comerciales por producto.</p>
           </div>
           <div class="timeline-item">
-            <span>Fase 2</span>
-            <h3>Lanzamiento</h3>
-            <p>Publicar paginas de producto, formularios de interes y material de venta.</p>
+            <span data-i18n="roadmap.phase2">Fase 2</span>
+            <h3 data-i18n="roadmap.launch.title">Lanzamiento</h3>
+            <p data-i18n="roadmap.launch.copy">Publicar paginas de producto, formularios de interes y material de venta.</p>
           </div>
           <div class="timeline-item">
-            <span>Fase 3</span>
-            <h3>Escala</h3>
-            <p>Medir adopcion, priorizar integraciones y convertir clientes piloto.</p>
+            <span data-i18n="roadmap.phase3">Fase 3</span>
+            <h3 data-i18n="roadmap.scale.title">Escala</h3>
+            <p data-i18n="roadmap.scale.copy">Medir adopcion, priorizar integraciones y convertir clientes piloto.</p>
           </div>
         </div>
       </section>
 
       <section class="contact" id="contacto">
         <div>
-          <p class="eyebrow">Contacto</p>
-          <h2>Construyamos el proximo producto con intencion.</h2>
-          <p>
+          <p class="eyebrow" data-i18n="contact.eyebrow">Contacto</p>
+          <h2 data-i18n="contact.title">Construyamos el proximo producto con intencion.</h2>
+          <p data-i18n="contact.copy">
             Usa esta seccion para conectar un formulario, calendario o correo directo. Por ahora
             queda lista como punto de conversion para prospectos, iglesias y organizaciones.
           </p>
         </div>
         <form class="contact-form">
           <label>
-            Nombre
-            <input type="text" name="name" placeholder="Tu nombre" />
+            <span data-i18n="form.name">Nombre</span>
+            <input type="text" name="name" placeholder="Tu nombre" data-i18n-placeholder="form.namePlaceholder" />
           </label>
           <label>
-            Email
+            <span>Email</span>
             <input type="email" name="email" placeholder="nombre@email.com" />
           </label>
           <label>
-            Producto de interes
+            <span data-i18n="form.product">Producto de interes</span>
             <select name="product">
               <option>ChurchHub</option>
               <option>LMS Platform</option>
               <option>Finanzas Iglesia</option>
               <option>AI Workflows</option>
               <option>KTG-Signage</option>
-              <option>Voto Electronico</option>
+              <option data-i18n="product.voting.title">Voto Electronico</option>
             </select>
           </label>
           <label>
-            Mensaje
-            <textarea name="message" rows="4" placeholder="Cuentame que necesitas"></textarea>
+            <span data-i18n="form.message">Mensaje</span>
+            <textarea name="message" rows="4" placeholder="Cuentame que necesitas" data-i18n-placeholder="form.messagePlaceholder"></textarea>
           </label>
-          <button class="button primary" type="submit">Enviar mensaje</button>
+          <button class="button primary" type="submit" data-i18n="form.submit">Enviar mensaje</button>
         </form>
       </section>
     </main>
@@ -291,7 +298,7 @@
       <div class="ai-agent-panel" role="dialog" aria-label="Agente de IA de Kingdom Tech Group">
         <header class="ai-agent-header">
           <div>
-            <span class="ai-agent-kicker">Agente IA</span>
+            <span class="ai-agent-kicker" data-i18n="agent.kicker">Agente IA</span>
             <h2>Asistente KTG</h2>
           </div>
           <button class="ai-agent-close" type="button" aria-label="Cerrar agente de IA">x</button>
@@ -301,30 +308,32 @@
           <div class="ai-message bot">
             <span class="ai-avatar">KTG</span>
             <p>
-              Hola. Soy el asistente de Kingdom Tech Group. Puedo orientarte sobre productos,
+              <span data-i18n="agent.welcome">Hola. Soy el asistente de Kingdom Tech Group. Puedo orientarte sobre productos,
               recomendar una solucion y ayudarte a iniciar una conversacion con el equipo.
+              </span>
             </p>
           </div>
         </div>
 
         <div class="ai-agent-prompts" aria-label="Preguntas rapidas">
-          <button type="button" data-prompt="Quiero una demo de ChurchHub">Demo ChurchHub</button>
-          <button type="button" data-prompt="Necesito una plataforma de cursos">Cursos</button>
-          <button type="button" data-prompt="Necesito pantallas digitales para anuncios">Signage</button>
-          <button type="button" data-prompt="Quiero organizar una votacion electronica">Votacion</button>
-          <button type="button" data-prompt="Busco automatizar procesos con IA">Automatizar</button>
+          <button type="button" data-prompt="Quiero una demo de ChurchHub" data-i18n="agent.prompt.churchhub">Demo ChurchHub</button>
+          <button type="button" data-prompt="Necesito una plataforma de cursos" data-i18n="agent.prompt.courses">Cursos</button>
+          <button type="button" data-prompt="Necesito pantallas digitales para anuncios" data-i18n="agent.prompt.signage">Signage</button>
+          <button type="button" data-prompt="Quiero organizar una votacion electronica" data-i18n="agent.prompt.voting">Votacion</button>
+          <button type="button" data-prompt="Busco automatizar procesos con IA" data-i18n="agent.prompt.automation">Automatizar</button>
         </div>
 
         <form class="ai-agent-form">
-          <label class="sr-only" for="ai-agent-input">Escribe tu mensaje</label>
+          <label class="sr-only" for="ai-agent-input" data-i18n="agent.inputLabel">Escribe tu mensaje</label>
           <input
             id="ai-agent-input"
             name="message"
             type="text"
             autocomplete="off"
             placeholder="Preguntame sobre los productos..."
+            data-i18n-placeholder="agent.placeholder"
           />
-          <button type="submit">Enviar</button>
+          <button type="submit" data-i18n="agent.send">Enviar</button>
         </form>
       </div>
     </section>
@@ -336,7 +345,11 @@
         </span>
         <span class="sr-only">Kingdom Tech Group</span>
       </span>
-      <span>Productos digitales con proposito.</span>
+      <span class="footer-copy" data-i18n="footer.copy">Productos digitales con proposito.</span>
+      <nav class="footer-links" aria-label="Legal">
+        <a href="privacy.html" data-i18n="nav.privacy">Privacidad</a>
+        <a href="terms.html" data-i18n="nav.terms">Terminos</a>
+      </nav>
     </footer>
 
     <script src="script.js"></script>
