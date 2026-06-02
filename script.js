@@ -14,12 +14,12 @@ const translations = {
   es: {
     "meta.title": "Kingdom Tech Group | Productos digitales con proposito",
     "nav.home": "Inicio",
-    "nav.about": "About Us",
+    "nav.about": "Sobre nosotros",
     "nav.products": "Productos",
     "nav.productsServices": "Productos y Servicios",
     "nav.approach": "Enfoque",
-    "nav.pricing": "Pricing",
-    "nav.support": "Soporte",
+    "nav.pricing": "Precios",
+    "nav.support": "Soporte tecnico",
     "nav.contact": "Contacto",
     "nav.privacy": "Privacidad",
     "nav.terms": "Terminos",
@@ -35,6 +35,20 @@ const translations = {
     "products.title": "Un ecosistema para servir mejor y administrar con claridad.",
     "products.copy":
       "Cada producto nace desde problemas concretos: seguimiento pastoral, entrenamiento, administracion financiera y flujos de trabajo que consumen tiempo. La meta es simple: menos friccion, mas visibilidad y decisiones mejor informadas.",
+    "home.statement.eyebrow": "Ecosistema KTG",
+    "home.statement.title": "Tecnologia para equipos que necesitan claridad, continuidad y control.",
+    "home.statement.copy":
+      "Disenamos plataformas y servicios para convertir operaciones fragmentadas en sistemas simples de usar, medibles y listos para crecer.",
+    "home.capability.ops.title": "Operaciones conectadas",
+    "home.capability.ops.copy": "Centraliza seguimiento, comunicacion y tareas claves para que los equipos trabajen con contexto.",
+    "home.capability.data.title": "Decision con datos",
+    "home.capability.data.copy": "Convierte actividad diaria en reportes, senales y visibilidad para liderazgo.",
+    "home.capability.ai.title": "Automatizacion aplicada",
+    "home.capability.ai.copy": "Usa IA e integraciones para reducir tareas repetitivas y acelerar respuestas.",
+    "home.cta.eyebrow": "Siguiente paso",
+    "home.cta.title": "Explora el portafolio o hablemos de tu necesidad.",
+    "home.cta.copy":
+      "La pagina de productos tiene el detalle completo. Si ya sabes lo que necesitas, podemos empezar por una conversacion corta.",
     "status.active": "Activo",
     "status.modernization": "Modernizacion",
     "status.exploration": "Exploracion",
@@ -164,7 +178,7 @@ const translations = {
       "El sitio y materiales se proporcionan con fines informativos. Productos en beta, piloto o concepto pueden cambiar. No garantizamos disponibilidad continua ni ausencia total de errores.",
     "terms.contact.title": "Contacto",
     "terms.contact.copy": "Para preguntas sobre estos terminos, escriba a legal@kingdomtechgroup.org.",
-    "about.title": "About Us",
+    "about.title": "Sobre nosotros",
     "about.intro":
       "Kingdom Tech Group desarrolla productos digitales para organizaciones que quieren operar con excelencia, claridad y una vision moderna del servicio.",
     "about.mission.title": "Nuestra mision",
@@ -188,7 +202,7 @@ const translations = {
     "services.ai.title": "Agentes y automatizacion IA",
     "services.ai.copy":
       "Disenamos asistentes, flujos inteligentes y automatizaciones para soporte, ventas, operaciones internas y analisis.",
-    "pricing.title": "Pricing",
+    "pricing.title": "Precios",
     "pricing.intro":
       "Planes flexibles segun producto, usuarios, integraciones y nivel de soporte. Estos rangos son una guia inicial para conversaciones comerciales.",
     "pricing.starter.title": "Starter",
@@ -247,6 +261,20 @@ const translations = {
     "products.title": "An ecosystem to serve better and operate with clarity.",
     "products.copy":
       "Every product starts with practical problems: pastoral follow-up, training, financial administration, and workflows that take too much time. The goal is simple: less friction, more visibility, and better-informed decisions.",
+    "home.statement.eyebrow": "KTG ecosystem",
+    "home.statement.title": "Technology for teams that need clarity, continuity, and control.",
+    "home.statement.copy":
+      "We design platforms and services that turn fragmented operations into systems that are simple to use, measurable, and ready to grow.",
+    "home.capability.ops.title": "Connected operations",
+    "home.capability.ops.copy": "Centralize follow-up, communication, and key tasks so teams can work with context.",
+    "home.capability.data.title": "Data-driven decisions",
+    "home.capability.data.copy": "Turn daily activity into reports, signals, and visibility for leadership.",
+    "home.capability.ai.title": "Applied automation",
+    "home.capability.ai.copy": "Use AI and integrations to reduce repetitive tasks and accelerate responses.",
+    "home.cta.eyebrow": "Next step",
+    "home.cta.title": "Explore the portfolio or tell us what you need.",
+    "home.cta.copy":
+      "The products page has the full detail. If you already know what you need, we can start with a short conversation.",
     "status.active": "Active",
     "status.modernization": "Modernization",
     "status.exploration": "Exploration",

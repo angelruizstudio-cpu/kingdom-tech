@@ -27,9 +27,9 @@
       </a>
       <nav class="desktop-nav" aria-label="Navegacion principal">
         <a href="index.html" data-i18n="nav.home">Inicio</a>
-        <a href="about.html" data-i18n="nav.about">About Us</a>
+        <a href="about.html" data-i18n="nav.about">Sobre nosotros</a>
         <a href="products.html" data-i18n="nav.productsServices">Productos y Servicios</a>
-        <a href="pricing.html" data-i18n="nav.pricing">Pricing</a>
+        <a href="pricing.html" data-i18n="nav.pricing">Precios</a>
         <a href="support.html" data-i18n="nav.support">Soporte</a>
         <a href="contact.html" data-i18n="nav.contact">Contacto</a>
       </nav>
@@ -45,9 +45,9 @@
 
     <nav class="mobile-nav" aria-label="Navegacion movil">
       <a href="index.html" data-i18n="nav.home">Inicio</a>
-      <a href="about.html" data-i18n="nav.about">About Us</a>
+      <a href="about.html" data-i18n="nav.about">Sobre nosotros</a>
       <a href="products.html" data-i18n="nav.productsServices">Productos y Servicios</a>
-      <a href="pricing.html" data-i18n="nav.pricing">Pricing</a>
+      <a href="pricing.html" data-i18n="nav.pricing">Precios</a>
       <a href="support.html" data-i18n="nav.support">Soporte</a>
       <a href="contact.html" data-i18n="nav.contact">Contacto</a>
     </nav>
@@ -68,8 +68,8 @@
             necesitan administrar personas, aprendizaje, finanzas y procesos con excelencia.
           </p>
           <div class="hero-actions">
-            <a class="button primary" href="#productos" data-i18n="hero.productsCta">Ver productos</a>
-            <a class="button secondary" href="#contacto" data-i18n="hero.contactCta">Hablemos</a>
+            <a class="button primary" href="products.html" data-i18n="hero.productsCta">Ver productos</a>
+            <a class="button secondary" href="contact.html" data-i18n="hero.contactCta">Hablemos</a>
           </div>
         </div>
       </section>
@@ -89,119 +89,32 @@
         </div>
       </section>
 
-      <section class="section intro" id="productos">
+      <section class="section intro home-statement">
         <div class="section-heading">
-          <p class="eyebrow" data-i18n="products.eyebrow">Productos en desarrollo</p>
-          <h2 data-i18n="products.title">Un ecosistema para servir mejor y administrar con claridad.</h2>
+          <p class="eyebrow" data-i18n="home.statement.eyebrow">Ecosistema KTG</p>
+          <h2 data-i18n="home.statement.title">Tecnologia para equipos que necesitan claridad, continuidad y control.</h2>
         </div>
-        <p data-i18n="products.copy">
-          Cada producto nace desde problemas concretos: seguimiento pastoral, entrenamiento,
-          administracion financiera y flujos de trabajo que consumen tiempo. La meta es simple:
-          menos friccion, mas visibilidad y decisiones mejor informadas.
+        <p data-i18n="home.statement.copy">
+          Diseñamos plataformas y servicios para convertir operaciones fragmentadas en sistemas
+          simples de usar, medibles y listos para crecer.
         </p>
       </section>
 
-      <section class="product-showcase" aria-label="Productos destacados">
-        <article class="product-card featured">
-          <div class="product-topline">
-            <span class="product-icon">CH</span>
-            <span class="status" data-i18n="status.active">Activo</span>
-          </div>
-          <h3>ChurchHub</h3>
-          <p data-i18n="product.churchhub.copy">
-            CRM ministerial para personas, visitas, familias, grupos, seguimiento y reportes.
-            Pensado para equipos que quieren cuidar mejor sin perder contexto.
-          </p>
-          <ul>
-            <li data-i18n="product.churchhub.item1">Perfiles de miembros y visitantes</li>
-            <li data-i18n="product.churchhub.item2">Seguimiento por estado, ministerio y notas</li>
-            <li data-i18n="product.churchhub.item3">Vista operacional para lideres y equipos</li>
-          </ul>
+      <section class="home-capabilities" aria-label="Capacidades">
+        <article>
+          <span>01</span>
+          <h3 data-i18n="home.capability.ops.title">Operaciones conectadas</h3>
+          <p data-i18n="home.capability.ops.copy">Centraliza seguimiento, comunicacion y tareas claves para que los equipos trabajen con contexto.</p>
         </article>
-
-        <article class="product-card">
-          <div class="product-topline">
-            <span class="product-icon gold">LMS</span>
-            <span class="status">Beta</span>
-          </div>
-          <h3>LMS Platform</h3>
-          <p data-i18n="product.lms.copy">
-            Plataforma de aprendizaje para cursos, cohortes, evaluaciones y progreso de
-            estudiantes en programas de formacion.
-          </p>
-          <ul>
-            <li data-i18n="product.lms.item1">Catalogo de cursos y lecciones</li>
-            <li data-i18n="product.lms.item2">Progreso por estudiante</li>
-            <li data-i18n="product.lms.item3">Panel para instructores</li>
-          </ul>
+        <article>
+          <span>02</span>
+          <h3 data-i18n="home.capability.data.title">Decision con datos</h3>
+          <p data-i18n="home.capability.data.copy">Convierte actividad diaria en reportes, señales y visibilidad para liderazgo.</p>
         </article>
-
-        <article class="product-card">
-          <div class="product-topline">
-            <span class="product-icon coral">FI</span>
-            <span class="status" data-i18n="status.modernization">Modernizacion</span>
-          </div>
-          <h3>Finanzas Iglesia</h3>
-          <p data-i18n="product.finance.copy">
-            Herramientas para ingresos, egresos, depositos, cuentas bancarias y trazabilidad
-            contable en organizaciones de fe.
-          </p>
-          <ul>
-            <li data-i18n="product.finance.item1">Control de transacciones</li>
-            <li data-i18n="product.finance.item2">Depositos y conciliacion</li>
-            <li data-i18n="product.finance.item3">Historial auditable</li>
-          </ul>
-        </article>
-
-        <article class="product-card">
-          <div class="product-topline">
-            <span class="product-icon blue">AI</span>
-            <span class="status" data-i18n="status.exploration">Exploracion</span>
-          </div>
-          <h3>AI Workflows</h3>
-          <p data-i18n="product.ai.copy">
-            Automatizaciones para reducir tareas repetitivas: resumenes, clasificacion,
-            asistencia administrativa y apoyo en decisiones operacionales.
-          </p>
-          <ul>
-            <li data-i18n="product.ai.item1">Asistentes internos</li>
-            <li data-i18n="product.ai.item2">Reportes automatizados</li>
-            <li data-i18n="product.ai.item3">Integraciones a medida</li>
-          </ul>
-        </article>
-
-        <article class="product-card">
-          <div class="product-topline">
-            <span class="product-icon violet">DS</span>
-            <span class="status" data-i18n="status.pilot">Piloto</span>
-          </div>
-          <h3>KTG-Signage</h3>
-          <p data-i18n="product.signage.copy">
-            Plataforma de digital signage para anuncios, pantallas informativas, eventos,
-            calendarios y comunicacion visual en iglesias, escuelas y organizaciones.
-          </p>
-          <ul>
-            <li data-i18n="product.signage.item1">Programacion de contenido por pantalla</li>
-            <li data-i18n="product.signage.item2">Anuncios, videos e imagenes</li>
-            <li data-i18n="product.signage.item3">Control centralizado de comunicacion visual</li>
-          </ul>
-        </article>
-
-        <article class="product-card">
-          <div class="product-topline">
-            <span class="product-icon green">VE</span>
-            <span class="status" data-i18n="status.concept">Concepto</span>
-          </div>
-          <h3 data-i18n="product.voting.title">Voto Electronico</h3>
-          <p data-i18n="product.voting.copy">
-            Solucion para procesos de votacion digital con registro de participantes,
-            control de elegibilidad, conteo rapido y trazabilidad del proceso.
-          </p>
-          <ul>
-            <li data-i18n="product.voting.item1">Votaciones seguras y organizadas</li>
-            <li data-i18n="product.voting.item2">Resultados y reportes</li>
-            <li data-i18n="product.voting.item3">Experiencia simple para participantes</li>
-          </ul>
+        <article>
+          <span>03</span>
+          <h3 data-i18n="home.capability.ai.title">Automatizacion aplicada</h3>
+          <p data-i18n="home.capability.ai.copy">Usa IA e integraciones para reducir tareas repetitivas y acelerar respuestas.</p>
         </article>
       </section>
 
@@ -253,41 +166,16 @@
         </div>
       </section>
 
-      <section class="contact" id="contacto">
+      <section class="home-cta">
         <div>
-          <p class="eyebrow" data-i18n="contact.eyebrow">Contacto</p>
-          <h2 data-i18n="contact.title">Construyamos el proximo producto con intencion.</h2>
-          <p data-i18n="contact.copy">
-            Usa esta seccion para conectar un formulario, calendario o correo directo. Por ahora
-            queda lista como punto de conversion para prospectos, iglesias y organizaciones.
-          </p>
+          <p class="eyebrow" data-i18n="home.cta.eyebrow">Siguiente paso</p>
+          <h2 data-i18n="home.cta.title">Explora el portafolio o hablemos de tu necesidad.</h2>
+          <p data-i18n="home.cta.copy">La pagina de productos tiene el detalle completo. Si ya sabes lo que necesitas, podemos empezar por una conversacion corta.</p>
         </div>
-        <form class="contact-form">
-          <label>
-            <span data-i18n="form.name">Nombre</span>
-            <input type="text" name="name" placeholder="Tu nombre" data-i18n-placeholder="form.namePlaceholder" />
-          </label>
-          <label>
-            <span>Email</span>
-            <input type="email" name="email" placeholder="nombre@email.com" />
-          </label>
-          <label>
-            <span data-i18n="form.product">Producto de interes</span>
-            <select name="product">
-              <option>ChurchHub</option>
-              <option>LMS Platform</option>
-              <option>Finanzas Iglesia</option>
-              <option>AI Workflows</option>
-              <option>KTG-Signage</option>
-              <option data-i18n="product.voting.title">Voto Electronico</option>
-            </select>
-          </label>
-          <label>
-            <span data-i18n="form.message">Mensaje</span>
-            <textarea name="message" rows="4" placeholder="Cuentame que necesitas" data-i18n-placeholder="form.messagePlaceholder"></textarea>
-          </label>
-          <button class="button primary" type="submit" data-i18n="form.submit">Enviar mensaje</button>
-        </form>
+        <div class="hero-actions">
+          <a class="button primary" href="products.html" data-i18n="hero.productsCta">Ver productos</a>
+          <a class="button secondary dark" href="contact.html" data-i18n="hero.contactCta">Hablemos</a>
+        </div>
       </section>
     </main>
 
