@@ -131,6 +131,8 @@ const translations = {
     "agent.prompt.voting": "Votacion",
     "agent.prompt.automation": "Automatizar",
     "footer.copy": "Productos digitales con proposito.",
+    "footer.addressLabel": "Direccion",
+    "business.address": "Kingdom Tech Group LLC, 8716 Madison St, Merrillville, IN 46410",
     "legal.updated": "Ultima actualizacion: 29 de mayo de 2026",
     "privacy.title": "Politica de Privacidad",
     "privacy.intro":
@@ -158,7 +160,8 @@ const translations = {
     "privacy.rights.copy":
       "Puede solicitar acceso, correccion o eliminacion de informacion, o cancelar comunicaciones, escribiendo a privacy@kingdomtechgroup.org.",
     "privacy.contact.title": "Contacto",
-    "privacy.contact.copy": "Para preguntas sobre privacidad, escriba a privacy@kingdomtechgroup.org.",
+    "privacy.contact.copy":
+      "Para preguntas sobre privacidad, escriba a privacy@kingdomtechgroup.org o contacte a Kingdom Tech Group LLC, 8716 Madison St, Merrillville, IN 46410.",
     "terms.title": "Terminos de Servicio",
     "terms.intro":
       "Estos terminos describen las reglas generales para usar el sitio, productos, demostraciones y comunicaciones de Kingdom Tech Group.",
@@ -183,7 +186,8 @@ const translations = {
     "terms.disclaimer.copy":
       "El sitio y materiales se proporcionan con fines informativos. Productos en beta, piloto o concepto pueden cambiar. No garantizamos disponibilidad continua ni ausencia total de errores.",
     "terms.contact.title": "Contacto",
-    "terms.contact.copy": "Para preguntas sobre estos terminos, escriba a legal@kingdomtechgroup.org.",
+    "terms.contact.copy":
+      "Para preguntas sobre estos terminos, escriba a legal@kingdomtechgroup.org o contacte a Kingdom Tech Group LLC, 8716 Madison St, Merrillville, IN 46410.",
     "about.title": "Sobre nosotros",
     "about.intro":
       "Kingdom Tech Group desarrolla productos digitales para organizaciones que quieren operar con excelencia, claridad y una vision moderna del servicio.",
@@ -242,6 +246,8 @@ const translations = {
     "contactPage.title": "Contacto",
     "contactPage.intro":
       "Hablemos de tu organizacion, producto de interes o proceso que quieres mejorar con tecnologia.",
+    "contact.address.title": "Direccion comercial",
+    "contact.address.copy": "Kingdom Tech Group LLC, 8716 Madison St, Merrillville, IN 46410",
   },
   en: {
     "meta.title": "Kingdom Tech Group | Purpose-built digital products",
@@ -363,6 +369,8 @@ const translations = {
     "agent.prompt.voting": "Voting",
     "agent.prompt.automation": "Automate",
     "footer.copy": "Purpose-built digital products.",
+    "footer.addressLabel": "Address",
+    "business.address": "Kingdom Tech Group LLC, 8716 Madison St, Merrillville, IN 46410",
     "legal.updated": "Last updated: May 29, 2026",
     "privacy.title": "Privacy Policy",
     "privacy.intro":
@@ -390,7 +398,8 @@ const translations = {
     "privacy.rights.copy":
       "You may request access, correction, or deletion of information, or opt out of communications, by contacting privacy@kingdomtechgroup.org.",
     "privacy.contact.title": "Contact",
-    "privacy.contact.copy": "For privacy questions, contact privacy@kingdomtechgroup.org.",
+    "privacy.contact.copy":
+      "For privacy questions, contact privacy@kingdomtechgroup.org or Kingdom Tech Group LLC, 8716 Madison St, Merrillville, IN 46410.",
     "terms.title": "Terms of Service",
     "terms.intro":
       "These terms describe the general rules for using Kingdom Tech Group's website, products, demonstrations, and communications.",
@@ -415,7 +424,8 @@ const translations = {
     "terms.disclaimer.copy":
       "The website and materials are provided for informational purposes. Products in beta, pilot, or concept may change. We do not guarantee continuous availability or a complete absence of errors.",
     "terms.contact.title": "Contact",
-    "terms.contact.copy": "For questions about these terms, contact legal@kingdomtechgroup.org.",
+    "terms.contact.copy":
+      "For questions about these terms, contact legal@kingdomtechgroup.org or Kingdom Tech Group LLC, 8716 Madison St, Merrillville, IN 46410.",
     "about.title": "About Us",
     "about.intro":
       "Kingdom Tech Group builds digital products for organizations that want to operate with excellence, clarity, and a modern vision of service.",
@@ -474,6 +484,8 @@ const translations = {
     "contactPage.title": "Contact",
     "contactPage.intro":
       "Let's talk about your organization, product of interest, or process you want to improve with technology.",
+    "contact.address.title": "Business address",
+    "contact.address.copy": "Kingdom Tech Group LLC, 8716 Madison St, Merrillville, IN 46410",
   },
 };
 

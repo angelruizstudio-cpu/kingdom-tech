@@ -907,6 +907,23 @@ textarea {
   margin-top: 6px;
 }
 
+.contact-address {
+  border-top: 1px solid var(--line);
+  margin-top: 28px;
+  padding-top: 22px;
+}
+
+.contact-address h3 {
+  font-size: 1.05rem;
+  letter-spacing: 0;
+  margin: 0 0 8px;
+}
+
+.contact-address p {
+  color: var(--ink-soft);
+  font-weight: 750;
+}
+
 .site-footer {
   background: var(--ink);
   color: rgba(255, 255, 255, 0.72);
@@ -922,6 +939,23 @@ textarea {
 .footer-copy {
   color: var(--paper-strong);
   font-weight: 850;
+}
+
+.footer-address {
+  color: rgba(255, 255, 255, 0.68);
+  display: grid;
+  font-size: 0.78rem;
+  font-style: normal;
+  gap: 4px;
+  line-height: 1.45;
+  max-width: 280px;
+}
+
+.footer-address strong {
+  color: var(--paper-strong);
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
 .footer-links {
