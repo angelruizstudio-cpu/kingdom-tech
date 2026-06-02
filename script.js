@@ -8,12 +8,18 @@ const aiInput = document.querySelector("#ai-agent-input");
 const aiBody = document.querySelector(".ai-agent-body");
 const aiPromptButtons = document.querySelectorAll("[data-prompt]");
 const languageToggle = document.querySelector("[data-language-toggle]");
+const languageOptions = document.querySelectorAll("[data-language-option]");
 
 const translations = {
   es: {
     "meta.title": "Kingdom Tech Group | Productos digitales con proposito",
+    "nav.home": "Inicio",
+    "nav.about": "About Us",
     "nav.products": "Productos",
+    "nav.productsServices": "Productos y Servicios",
     "nav.approach": "Enfoque",
+    "nav.pricing": "Pricing",
+    "nav.support": "Soporte",
     "nav.contact": "Contacto",
     "nav.privacy": "Privacidad",
     "nav.terms": "Terminos",
@@ -158,11 +164,74 @@ const translations = {
       "El sitio y materiales se proporcionan con fines informativos. Productos en beta, piloto o concepto pueden cambiar. No garantizamos disponibilidad continua ni ausencia total de errores.",
     "terms.contact.title": "Contacto",
     "terms.contact.copy": "Para preguntas sobre estos terminos, escriba a legal@kingdomtechgroup.org.",
+    "about.title": "About Us",
+    "about.intro":
+      "Kingdom Tech Group desarrolla productos digitales para organizaciones que quieren operar con excelencia, claridad y una vision moderna del servicio.",
+    "about.mission.title": "Nuestra mision",
+    "about.mission.copy":
+      "Crear tecnologia practica para iglesias, academias y organizaciones que necesitan cuidar personas, administrar procesos y tomar mejores decisiones.",
+    "about.values.title": "Como trabajamos",
+    "about.values.copy":
+      "Construimos con sobriedad, enfoque operacional, seguridad y respeto por el contexto real de cada equipo.",
+    "about.why.title": "Por que KTG",
+    "about.why.copy":
+      "Combinamos experiencia tecnica, sensibilidad ministerial y pensamiento de producto para convertir necesidades reales en plataformas utiles.",
+    "productsPage.title": "Productos y Servicios",
+    "productsPage.intro":
+      "Un portafolio de plataformas y servicios para administracion, aprendizaje, finanzas, senalizacion digital, votacion y automatizacion.",
+    "services.strategy.title": "Consultoria de producto",
+    "services.strategy.copy":
+      "Ayudamos a definir alcance, roadmap, experiencia de usuario y arquitectura para convertir ideas en productos listos para lanzar.",
+    "services.integration.title": "Integraciones",
+    "services.integration.copy":
+      "Conectamos herramientas, bases de datos, formularios, reportes, automatizaciones y servicios externos para reducir trabajo manual.",
+    "services.ai.title": "Agentes y automatizacion IA",
+    "services.ai.copy":
+      "Disenamos asistentes, flujos inteligentes y automatizaciones para soporte, ventas, operaciones internas y analisis.",
+    "pricing.title": "Pricing",
+    "pricing.intro":
+      "Planes flexibles segun producto, usuarios, integraciones y nivel de soporte. Estos rangos son una guia inicial para conversaciones comerciales.",
+    "pricing.starter.title": "Starter",
+    "pricing.starter.copy": "Para validar una necesidad, lanzar una demo o iniciar un piloto pequeno.",
+    "pricing.starter.item1": "Discovery inicial",
+    "pricing.starter.item2": "Demo o piloto",
+    "pricing.starter.item3": "Alcance definido",
+    "pricing.growth.title": "Growth",
+    "pricing.growth.copy": "Para organizaciones que necesitan operar con usuarios reales, soporte y configuracion inicial.",
+    "pricing.growth.item1": "Configuracion inicial",
+    "pricing.growth.item2": "Soporte operacional",
+    "pricing.growth.item3": "Usuarios y modulos clave",
+    "pricing.custom.title": "Custom",
+    "pricing.custom.copy": "Para implementaciones con integraciones, automatizaciones, migraciones o requerimientos especificos.",
+    "pricing.custom.item1": "Integraciones",
+    "pricing.custom.item2": "Migraciones",
+    "pricing.custom.item3": "Automatizaciones IA",
+    "pricing.cta": "Solicitar cotizacion",
+    "support.title": "Soporte Tecnico",
+    "support.intro":
+      "Soporte para productos KTG, incidentes, preguntas tecnicas, solicitudes de configuracion y acompanamiento de implementacion.",
+    "support.channels.title": "Canales de soporte",
+    "support.channels.copy":
+      "Puedes iniciar una solicitud por email, formulario de contacto o mediante el equipo asignado a tu implementacion.",
+    "support.response.title": "Prioridad",
+    "support.response.copy":
+      "Clasificamos solicitudes por impacto: consulta general, configuracion, incidente funcional o interrupcion critica.",
+    "support.prepare.title": "Antes de escribir",
+    "support.prepare.copy":
+      "Incluye producto, organizacion, descripcion del problema, capturas si aplica y pasos para reproducir el caso.",
+    "contactPage.title": "Contacto",
+    "contactPage.intro":
+      "Hablemos de tu organizacion, producto de interes o proceso que quieres mejorar con tecnologia.",
   },
   en: {
     "meta.title": "Kingdom Tech Group | Purpose-built digital products",
+    "nav.home": "Home",
+    "nav.about": "About Us",
     "nav.products": "Products",
+    "nav.productsServices": "Products & Services",
     "nav.approach": "Approach",
+    "nav.pricing": "Pricing",
+    "nav.support": "Support",
     "nav.contact": "Contact",
     "nav.privacy": "Privacy",
     "nav.terms": "Terms",
@@ -307,6 +376,64 @@ const translations = {
       "The website and materials are provided for informational purposes. Products in beta, pilot, or concept may change. We do not guarantee continuous availability or a complete absence of errors.",
     "terms.contact.title": "Contact",
     "terms.contact.copy": "For questions about these terms, contact legal@kingdomtechgroup.org.",
+    "about.title": "About Us",
+    "about.intro":
+      "Kingdom Tech Group builds digital products for organizations that want to operate with excellence, clarity, and a modern vision of service.",
+    "about.mission.title": "Our mission",
+    "about.mission.copy":
+      "Create practical technology for churches, academies, and organizations that need to care for people, manage processes, and make better decisions.",
+    "about.values.title": "How we work",
+    "about.values.copy":
+      "We build with restraint, operational focus, security, and respect for the real context of each team.",
+    "about.why.title": "Why KTG",
+    "about.why.copy":
+      "We combine technical experience, ministry awareness, and product thinking to turn real needs into useful platforms.",
+    "productsPage.title": "Products & Services",
+    "productsPage.intro":
+      "A portfolio of platforms and services for administration, learning, finance, digital signage, voting, and automation.",
+    "services.strategy.title": "Product consulting",
+    "services.strategy.copy":
+      "We help define scope, roadmap, user experience, and architecture to turn ideas into products ready to launch.",
+    "services.integration.title": "Integrations",
+    "services.integration.copy":
+      "We connect tools, databases, forms, reports, automations, and external services to reduce manual work.",
+    "services.ai.title": "AI agents and automation",
+    "services.ai.copy":
+      "We design assistants, intelligent flows, and automations for support, sales, internal operations, and analysis.",
+    "pricing.title": "Pricing",
+    "pricing.intro":
+      "Flexible plans based on product, users, integrations, and support level. These ranges are an initial guide for commercial conversations.",
+    "pricing.starter.title": "Starter",
+    "pricing.starter.copy": "For validating a need, launching a demo, or starting a small pilot.",
+    "pricing.starter.item1": "Initial discovery",
+    "pricing.starter.item2": "Demo or pilot",
+    "pricing.starter.item3": "Defined scope",
+    "pricing.growth.title": "Growth",
+    "pricing.growth.copy": "For organizations that need to operate with real users, support, and initial configuration.",
+    "pricing.growth.item1": "Initial setup",
+    "pricing.growth.item2": "Operational support",
+    "pricing.growth.item3": "Key users and modules",
+    "pricing.custom.title": "Custom",
+    "pricing.custom.copy": "For implementations with integrations, automations, migrations, or specific requirements.",
+    "pricing.custom.item1": "Integrations",
+    "pricing.custom.item2": "Migrations",
+    "pricing.custom.item3": "AI automations",
+    "pricing.cta": "Request quote",
+    "support.title": "Technical Support",
+    "support.intro":
+      "Support for KTG products, incidents, technical questions, configuration requests, and implementation guidance.",
+    "support.channels.title": "Support channels",
+    "support.channels.copy":
+      "You can start a request by email, contact form, or through the team assigned to your implementation.",
+    "support.response.title": "Priority",
+    "support.response.copy":
+      "We classify requests by impact: general question, configuration, functional incident, or critical interruption.",
+    "support.prepare.title": "Before contacting us",
+    "support.prepare.copy":
+      "Include product, organization, problem description, screenshots if applicable, and steps to reproduce the case.",
+    "contactPage.title": "Contact",
+    "contactPage.intro":
+      "Let's talk about your organization, product of interest, or process you want to improve with technology.",
   },
 };
 
@@ -344,6 +471,11 @@ function applyLanguage(language) {
       activeLanguage === "es" ? "Change language to English" : "Cambiar idioma a espanol",
     );
   }
+
+  languageOptions.forEach((button) => {
+    button.classList.toggle("is-active", button.dataset.languageOption === activeLanguage);
+    button.setAttribute("aria-pressed", String(button.dataset.languageOption === activeLanguage));
+  });
 }
 
 menuToggle?.addEventListener("click", () => {
@@ -509,6 +641,12 @@ aiPromptButtons.forEach((button) => {
 
 languageToggle?.addEventListener("click", () => {
   applyLanguage(getCurrentLanguage() === "es" ? "en" : "es");
+});
+
+languageOptions.forEach((button) => {
+  button.addEventListener("click", () => {
+    applyLanguage(button.dataset.languageOption || "es");
+  });
 });
 
 applyLanguage(getCurrentLanguage());

@@ -9,6 +9,12 @@
     />
     <title data-i18n="terms.title">Terminos de Servicio</title>
     <link rel="icon" href="assets/kingdom-tech-logo-original.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -20,16 +26,17 @@
         <span class="sr-only">Kingdom Tech Group</span>
       </a>
       <nav class="desktop-nav" aria-label="Navegacion principal">
-        <a href="index.html#productos" data-i18n="nav.products">Productos</a>
-        <a href="index.html#enfoque" data-i18n="nav.approach">Enfoque</a>
-        <a href="index.html#roadmap">Roadmap</a>
-        <a href="index.html#contacto" data-i18n="nav.contact">Contacto</a>
-        <a href="privacy.html" data-i18n="nav.privacy">Privacidad</a>
-        <a href="terms.html" data-i18n="nav.terms">Terminos</a>
+        <a href="index.html" data-i18n="nav.home">Inicio</a>
+        <a href="about.html" data-i18n="nav.about">About Us</a>
+        <a href="products.html" data-i18n="nav.productsServices">Productos y Servicios</a>
+        <a href="pricing.html" data-i18n="nav.pricing">Pricing</a>
+        <a href="support.html" data-i18n="nav.support">Soporte</a>
+        <a href="contact.html" data-i18n="nav.contact">Contacto</a>
       </nav>
-      <button class="language-toggle" type="button" data-language-toggle aria-label="Change language">
-        EN
-      </button>
+      <div class="language-switch" role="group" aria-label="Language selector">
+        <button type="button" data-language-option="es" aria-label="Español Puerto Rico">🇵🇷</button>
+        <button type="button" data-language-option="en" aria-label="English United States">🇺🇸</button>
+      </div>
       <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false">
         <span></span>
         <span></span>
@@ -37,12 +44,12 @@
     </header>
 
     <nav class="mobile-nav" aria-label="Navegacion movil">
-      <a href="index.html#productos" data-i18n="nav.products">Productos</a>
-      <a href="index.html#enfoque" data-i18n="nav.approach">Enfoque</a>
-      <a href="index.html#roadmap">Roadmap</a>
-      <a href="index.html#contacto" data-i18n="nav.contact">Contacto</a>
-      <a href="privacy.html" data-i18n="nav.privacy">Privacidad</a>
-      <a href="terms.html" data-i18n="nav.terms">Terminos</a>
+      <a href="index.html" data-i18n="nav.home">Inicio</a>
+      <a href="about.html" data-i18n="nav.about">About Us</a>
+      <a href="products.html" data-i18n="nav.productsServices">Productos y Servicios</a>
+      <a href="pricing.html" data-i18n="nav.pricing">Pricing</a>
+      <a href="support.html" data-i18n="nav.support">Soporte</a>
+      <a href="contact.html" data-i18n="nav.contact">Contacto</a>
     </nav>
 
     <main>
