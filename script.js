@@ -35,6 +35,12 @@ const translations = {
     "products.title": "Un ecosistema para servir mejor y administrar con claridad.",
     "products.copy":
       "Cada producto nace desde problemas concretos: seguimiento pastoral, entrenamiento, administracion financiera y flujos de trabajo que consumen tiempo. La meta es simple: menos friccion, mas visibilidad y decisiones mejor informadas.",
+    "mega.title": "Explora KTG",
+    "mega.platforms.title": "Plataformas",
+    "mega.platforms.copy": "Productos para operar, comunicar, formar y administrar mejor.",
+    "mega.services.title": "Servicios",
+    "mega.services.copy": "Acompanamiento para lanzar, integrar y automatizar tus operaciones.",
+    "mega.footer": "Ver todos los productos y servicios",
     "home.statement.eyebrow": "Ecosistema KTG",
     "home.statement.title": "Tecnologia para equipos que necesitan claridad, continuidad y control.",
     "home.statement.copy":
@@ -261,6 +267,12 @@ const translations = {
     "products.title": "An ecosystem to serve better and operate with clarity.",
     "products.copy":
       "Every product starts with practical problems: pastoral follow-up, training, financial administration, and workflows that take too much time. The goal is simple: less friction, more visibility, and better-informed decisions.",
+    "mega.title": "Explore KTG",
+    "mega.platforms.title": "Platforms",
+    "mega.platforms.copy": "Products to operate, communicate, train, and administer better.",
+    "mega.services.title": "Services",
+    "mega.services.copy": "Guidance to launch, integrate, and automate your operations.",
+    "mega.footer": "See all products and services",
     "home.statement.eyebrow": "KTG ecosystem",
     "home.statement.title": "Technology for teams that need clarity, continuity, and control.",
     "home.statement.copy":

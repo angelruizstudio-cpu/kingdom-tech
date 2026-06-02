@@ -129,6 +129,132 @@ textarea {
   color: var(--teal-dark);
 }
 
+.nav-mega {
+  align-items: center;
+  display: flex;
+  height: 72px;
+}
+
+.nav-mega-trigger {
+  color: var(--ink-soft);
+  font-size: 0.86rem;
+  font-weight: 750;
+}
+
+.mega-menu {
+  background: rgba(255, 255, 255, 0.98);
+  border: 1px solid rgba(13, 17, 20, 0.09);
+  border-radius: 8px;
+  box-shadow: 0 28px 90px rgba(13, 17, 20, 0.26);
+  left: 50%;
+  opacity: 0;
+  padding: 16px;
+  pointer-events: none;
+  position: fixed;
+  top: 72px;
+  transform: translateX(-50%) translateY(10px);
+  transition: opacity 160ms ease, transform 160ms ease, visibility 160ms ease;
+  visibility: hidden;
+  width: min(920px, calc(100vw - 44px));
+  z-index: 30;
+}
+
+.nav-mega:hover .mega-menu,
+.nav-mega:focus-within .mega-menu {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateX(-50%) translateY(0);
+  visibility: visible;
+}
+
+.mega-title {
+  color: var(--ink);
+  font-size: 0.86rem;
+  font-weight: 900;
+  margin: 0 0 12px;
+}
+
+.mega-grid {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.mega-panel {
+  border-radius: 8px;
+  padding: 18px;
+}
+
+.mega-platforms {
+  background: #e8f1fb;
+}
+
+.mega-services {
+  background: #f1e7fb;
+}
+
+.mega-panel h3 {
+  color: var(--ink);
+  font-size: 1.05rem;
+  letter-spacing: 0;
+  margin: 0 0 8px;
+}
+
+.mega-panel p {
+  color: var(--muted);
+  line-height: 1.55;
+  margin: 0 0 18px;
+}
+
+.mega-links {
+  display: grid;
+  gap: 8px 16px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.mega-links a {
+  align-items: center;
+  color: var(--ink);
+  display: grid;
+  font-size: 0.9rem;
+  font-weight: 780;
+  gap: 8px;
+  grid-template-columns: 36px minmax(0, 1fr);
+  min-height: 38px;
+}
+
+.mega-links a::after {
+  color: var(--teal-dark);
+  content: ">";
+  font-weight: 900;
+  justify-self: end;
+}
+
+.mega-links span:first-child {
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(13, 17, 20, 0.08);
+  border-radius: 8px;
+  color: var(--teal-dark);
+  display: inline-grid;
+  font-size: 0.68rem;
+  font-weight: 900;
+  height: 30px;
+  place-items: center;
+  width: 32px;
+}
+
+.mega-footer {
+  align-items: center;
+  border: 1px solid rgba(13, 17, 20, 0.08);
+  border-radius: 8px;
+  color: var(--teal-dark);
+  display: flex;
+  font-weight: 900;
+  justify-content: center;
+  margin-top: 10px;
+  min-height: 58px;
+}
+
 .language-switch {
   align-items: center;
   background: rgba(13, 17, 20, 0.06);
