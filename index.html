@@ -83,38 +83,39 @@
 
     <main>
       <section class="hero" id="inicio">
-        <img
-          src="assets/kingdom-tech-hero.png"
-          alt="Interfaces digitales de productos conectados sobre un escritorio tecnologico"
-          class="hero-image"
-        />
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-          <p class="eyebrow" data-i18n="hero.eyebrow">Software con vision, operaciones con orden</p>
-          <h1>Kingdom Tech Group</h1>
-          <p class="hero-copy" data-i18n="hero.copy">
-            Creamos plataformas digitales para iglesias, academias y organizaciones que
-            necesitan administrar personas, aprendizaje, finanzas y procesos con excelencia.
-          </p>
-          <div class="hero-actions">
-            <a class="button primary" href="products.html" data-i18n="hero.productsCta">Ver productos</a>
-            <a class="button secondary" href="contact.html" data-i18n="hero.contactCta">Hablemos</a>
+        <div class="hero-shell">
+          <div class="hero-content">
+            <p class="eyebrow" data-i18n="hero.eyebrow">TECNOLOGÍA PARA ORGANIZACIONES QUE OPERAN EN SERIO</p>
+            <h1 data-i18n-html="hero.title">Tus operaciones,<br />sin el caos.</h1>
+            <p class="hero-copy" data-i18n="hero.copy">
+              Construimos software para iglesias, academias y equipos que ya no pueden darse el lujo
+              de operar desde hojas de cálculo y grupos de WhatsApp. Plataformas reales, para gente real.
+            </p>
+            <div class="hero-actions">
+              <a class="button primary" href="products.html" data-i18n="hero.productsCta">Explorar plataformas →</a>
+              <a class="hero-link" href="contact.html" data-i18n="hero.contactCta">¿Tienes un proyecto? Cuéntanos</a>
+            </div>
+            <ul class="hero-stats" aria-label="Indicadores de Kingdom Tech Group">
+              <li data-i18n="metrics.products">6 productos activos</li>
+              <li data-i18n="metrics.ai">AI integrada</li>
+              <li data-i18n="metrics.operations">100% operacional</li>
+            </ul>
           </div>
-        </div>
-      </section>
-
-      <section class="metrics" aria-label="Indicadores de enfoque">
-        <div>
-          <strong>6</strong>
-          <span data-i18n="metrics.products">lineas de producto</span>
-        </div>
-        <div>
-          <strong>100%</strong>
-          <span data-i18n="metrics.operations">orientado a operaciones reales</span>
-        </div>
-        <div>
-          <strong>AI</strong>
-          <span data-i18n="metrics.ai">automatizacion aplicada</span>
+          <div class="hero-visual" aria-hidden="true">
+            <svg class="hero-node-grid" viewBox="0 0 400 400" role="img">
+              <path class="hero-grid-line line-a" d="M62 92 L156 152 L242 92 L336 164" />
+              <path class="hero-grid-line line-b" d="M82 286 L156 152 L226 250 L336 164" />
+              <path class="hero-grid-line line-c" d="M62 92 L82 286 L226 250 L242 92" />
+              <circle class="hero-node node-a" cx="62" cy="92" r="10" />
+              <circle class="hero-node node-b" cx="156" cy="152" r="14" />
+              <circle class="hero-node node-c" cx="242" cy="92" r="10" />
+              <circle class="hero-node node-d" cx="336" cy="164" r="14" />
+              <circle class="hero-node node-e" cx="82" cy="286" r="12" />
+              <circle class="hero-node node-f" cx="226" cy="250" r="10" />
+              <circle class="hero-node node-g" cx="304" cy="302" r="8" />
+              <path class="hero-grid-line line-d" d="M226 250 L304 302 L336 164" />
+            </svg>
+          </div>
         </div>
       </section>
 

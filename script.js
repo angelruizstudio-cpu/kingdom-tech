@@ -23,14 +23,15 @@ const translations = {
     "nav.contact": "Contacto",
     "nav.privacy": "Privacidad",
     "nav.terms": "Terminos",
-    "hero.eyebrow": "Software con vision, operaciones con orden",
+    "hero.eyebrow": "TECNOLOGÍA PARA ORGANIZACIONES QUE OPERAN EN SERIO",
+    "hero.title": "Tus operaciones,<br />sin el caos.",
     "hero.copy":
-      "Creamos plataformas digitales para iglesias, academias y organizaciones que necesitan administrar personas, aprendizaje, finanzas y procesos con excelencia.",
-    "hero.productsCta": "Ver productos",
-    "hero.contactCta": "Hablemos",
-    "metrics.products": "lineas de producto",
-    "metrics.operations": "orientado a operaciones reales",
-    "metrics.ai": "automatizacion aplicada",
+      "Construimos software para iglesias, academias y equipos que ya no pueden darse el lujo de operar desde hojas de cálculo y grupos de WhatsApp. Plataformas reales, para gente real.",
+    "hero.productsCta": "Explorar plataformas →",
+    "hero.contactCta": "¿Tienes un proyecto? Cuéntanos",
+    "metrics.products": "6 productos activos",
+    "metrics.operations": "100% operacional",
+    "metrics.ai": "AI integrada",
     "products.eyebrow": "Productos en desarrollo",
     "products.title": "Un ecosistema para servir mejor y administrar con claridad.",
     "products.copy":
@@ -261,14 +262,15 @@ const translations = {
     "nav.contact": "Contact",
     "nav.privacy": "Privacy",
     "nav.terms": "Terms",
-    "hero.eyebrow": "Software with vision, operations with order",
+    "hero.eyebrow": "TECHNOLOGY FOR ORGANIZATIONS THAT OPERATE SERIOUSLY",
+    "hero.title": "Your operations,<br />without the chaos.",
     "hero.copy":
-      "We build digital platforms for churches, academies, and organizations that need to manage people, learning, finances, and processes with excellence.",
-    "hero.productsCta": "View products",
-    "hero.contactCta": "Let's talk",
-    "metrics.products": "product lines",
-    "metrics.operations": "built for real operations",
-    "metrics.ai": "applied automation",
+      "We build software for churches, academies, and teams that can no longer afford to operate from spreadsheets and WhatsApp groups. Real platforms, for real people.",
+    "hero.productsCta": "Explore platforms →",
+    "hero.contactCta": "Have a project? Tell us",
+    "metrics.products": "6 active products",
+    "metrics.operations": "100% operational",
+    "metrics.ai": "Integrated AI",
     "products.eyebrow": "Products in development",
     "products.title": "An ecosystem to serve better and operate with clarity.",
     "products.copy":
@@ -502,6 +504,12 @@ function applyLanguage(language) {
     const key = element.dataset.i18n;
     const value = translations[activeLanguage][key];
     if (value) element.textContent = value;
+  });
+
+  document.querySelectorAll("[data-i18n-html]").forEach((element) => {
+    const key = element.dataset.i18nHtml;
+    const value = translations[activeLanguage][key];
+    if (value) element.innerHTML = value;
   });
 
   document.querySelectorAll("[data-i18n-placeholder]").forEach((element) => {
