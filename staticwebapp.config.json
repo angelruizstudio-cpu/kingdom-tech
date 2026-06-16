@@ -1,0 +1,21 @@
+{
+  "navigationFallback": {
+    "rewrite": "/index.html",
+    "exclude": ["/assets/*", "*.css", "*.js", "*.png", "*.jpg", "*.svg", "*.ico"]
+  },
+  "routes": [
+    { "route": "/about", "rewrite": "/about.html" },
+    { "route": "/products", "rewrite": "/products.html" },
+    { "route": "/pricing", "rewrite": "/pricing.html" },
+    { "route": "/contact", "rewrite": "/contact.html" },
+    { "route": "/support", "rewrite": "/support.html" },
+    { "route": "/privacy", "rewrite": "/privacy.html" },
+    { "route": "/terms", "rewrite": "/terms.html" }
+  ],
+  "responseOverrides": {
+    "404": {
+      "rewrite": "/index.html",
+      "statusCode": 200
+    }
+  }
+}
