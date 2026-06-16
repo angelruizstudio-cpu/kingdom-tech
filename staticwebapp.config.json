@@ -10,7 +10,9 @@
     { "route": "/contact", "rewrite": "/contact.html" },
     { "route": "/support", "rewrite": "/support.html" },
     { "route": "/privacy", "rewrite": "/privacy.html" },
-    { "route": "/terms", "rewrite": "/terms.html" }
+    { "route": "/terms", "rewrite": "/terms.html" },
+    { "route": "/sitemap.xml", "rewrite": "/sitemap.xml" },
+    { "route": "/robots.txt", "rewrite": "/robots.txt" }
   ],
   "responseOverrides": {
     "404": {
