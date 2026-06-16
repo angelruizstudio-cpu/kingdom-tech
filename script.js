@@ -260,6 +260,20 @@ const translations = {
     "testimonial.3.quote": "Finalmente tenemos un sistema de finanzas que entiende cómo opera una iglesia. Simple, auditable y sin curva de aprendizaje para nuestro equipo.",
     "testimonial.3.name": "Pastor Carlos Medina",
     "testimonial.3.org": "Ministerios Roca Firme, Merrillville IN",
+    "hero.titleAccent": "sin el caos.",
+    "hero.check1": "Consulta inicial sin costo",
+    "hero.check2": "Plataformas listas para operar",
+    "hero.check3": "Soporte incluido",
+    "home.capability.eyebrow": "Qué construimos",
+    "home.capability.title": "Una plataforma para cada capa de tu organización.",
+    "home.capability.intro": "Productos que se conectan entre sí para que tus equipos operen con contexto, datos y claridad.",
+    "home.bannerInline.question": "¿No sabes cuál necesitas?",
+    "home.bannerInline.copy": "Cuéntanos el problema — te recomendamos la solución correcta, sin costo.",
+    "home.bannerInline.cta": "Consejo de experto →",
+    "approach.copy": "Sin cajas negras. Sabes qué se está construyendo, qué sigue y cuánto cuesta — desde la primera llamada hasta después del lanzamiento.",
+    "approach.cta": "Agenda una llamada →",
+    "home.cta.contactCta": "Hablemos →",
+    "home.cta.sub": "Respuesta en 24h · Sin compromiso",
   },
   en: {
     "meta.title": "Kingdom Tech Group | Purpose-built digital products",
@@ -510,6 +524,20 @@ const translations = {
     "testimonial.3.quote": "We finally have a finance system that understands how a church operates. Simple, auditable, and no learning curve for our team.",
     "testimonial.3.name": "Pastor Carlos Medina",
     "testimonial.3.org": "Ministerios Roca Firme, Merrillville IN",
+    "hero.titleAccent": "without the chaos.",
+    "hero.check1": "Free initial consultation",
+    "hero.check2": "Platforms ready to operate",
+    "hero.check3": "Support included",
+    "home.capability.eyebrow": "What we build",
+    "home.capability.title": "A platform for every layer of your organization.",
+    "home.capability.intro": "Products that connect with each other so your teams operate with context, data, and clarity.",
+    "home.bannerInline.question": "Not sure which you need?",
+    "home.bannerInline.copy": "Tell us the problem — we'll recommend the right solution, free of charge.",
+    "home.bannerInline.cta": "Get expert advice →",
+    "approach.copy": "No black boxes. You always know what's being built, what's next, and what it costs — from the first call to long after launch.",
+    "approach.cta": "Book a free call →",
+    "home.cta.contactCta": "Let's talk →",
+    "home.cta.sub": "24h response · No obligation",
   },
 };
 
@@ -732,3 +760,32 @@ languageOptions.forEach((button) => {
 });
 
 applyLanguage(getCurrentLanguage());
+
+// Testimonials carousel
+const track = document.getElementById("testimonialsTrack");
+const dots = document.querySelectorAll("#testimonialsDots button");
+let currentSlide = 0;
+
+function goToSlide(index) {
+  if (!track) return;
+  const cards = track.querySelectorAll(".testimonial-card");
+  const total = cards.length;
+  currentSlide = (index + total) % total;
+  const cardWidth = cards[0].offsetWidth + 24;
+  track.style.transform = `translateX(-${currentSlide * cardWidth}px)`;
+  dots.forEach((d, i) => d.classList.toggle("is-active", i === currentSlide));
+}
+
+document.getElementById("testimonialsNext")?.addEventListener("click", () => goToSlide(currentSlide + 1));
+document.getElementById("testimonialsPrev")?.addEventListener("click", () => goToSlide(currentSlide - 1));
+dots.forEach((dot, i) => dot.addEventListener("click", () => goToSlide(i)));
+
+// Scroll fade-up animations
+const fadeEls = document.querySelectorAll(".fade-up");
+if (fadeEls.length) {
+  const observer = new IntersectionObserver(
+    (entries) => entries.forEach((e) => { if (e.isIntersecting) { e.target.classList.add("is-visible"); observer.unobserve(e.target); } }),
+    { threshold: 0.12 }
+  );
+  fadeEls.forEach((el) => observer.observe(el));
+}
